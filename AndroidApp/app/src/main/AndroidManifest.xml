@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.luigidigirolamo.calendar" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/calendar_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserIndex"
+            android:label="@string/title_activity_user_index"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.luigidigirolamo.calendar.MainActivity" />
+        </activity>
+        <activity
+            android:name=".NewEventActivity"
+            android:label="New Event"
+            android:parentActivityName=".UserIndex"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.luigidigirolamo.calendar.UserIndex" />
+        </activity>
+        <activity
+            android:name=".EditEventActivity"
+            android:label="Edit Event"
+            android:parentActivityName=".UserIndex"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.luigidigirolamo.calendar.UserIndex" />
+        </activity>
+        <activity
+            android:name=".CalendarsActivity"
+            android:label="Calendars"
+            android:parentActivityName=".UserIndex"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.luigidigirolamo.calendar.UserIndex" />
+        </activity>
+        <activity
+            android:name=".NewCalendarActivity"
+            android:label="New Calendar"
+            android:parentActivityName=".CalendarsActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.luigidigirolamo.calendar.CalendarsActivity" />
+        </activity>
+        <activity
+            android:name=".UpdateCalendarActivity"
+            android:label="Update Calendar"
+            android:parentActivityName=".CalendarsActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.luigidigirolamo.calendar.CalendarsActivity" />
+        </activity>
+        <activity
+            android:name=".SyncActivity"
+            android:label="Import"
+            android:parentActivityName=".CalendarsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.luigidigirolamo.calendar.CalendarsActivity" />
+        </activity>
+        <activity
+            android:name=".SyncActivityGoogle"
+            android:label="Google Calendar API Android Quickstart" >
+            android:parentActivityName=".UserIndex"
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.luigidigirolamo.calendar.CalendarsActivity" />
+        </activity>
+        <activity
+            android:name=".SyncActivityGoogleExport"
+            android:label="SyncActivityGoogleExport" >
+            android:parentActivityName=".UserIndex"
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.luigidigirolamo.calendar.CalendarsActivity" />
+        </activity>
+        <activity
+            android:name=".SyncExportActivity"
+            android:label="Export" >
+            android:parentActivityName=".UserIndex"
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.luigidigirolamo.calendar.CalendarsActivity" />
+        </activity>
+    </application>
+
+</manifest>

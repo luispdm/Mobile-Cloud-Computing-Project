@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/refresh"
+        android:title="Refresh" />
+    <item android:id="@+id/newevent"
+        android:title="@string/newevent" />
+    <item android:id="@+id/calendars"
+        android:title="@string/calendars" />
+    <item android:id="@+id/sync"
+        android:title="Import" />
+    <item android:id="@+id/export"
+        android:title="Export" />
+    <item android:id="@+id/logout"
+        android:title="Logout" />"
+</menu>

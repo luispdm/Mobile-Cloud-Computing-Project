@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="16dp"
+        android:hint="Event Name"
+        />
+
+    <TextView android:id="@+id/startdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/enddate"
+        android:hint="startdate" />
+
+    <TextView android:id="@+id/enddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:hint="enddate"/>
+
+    <TextView android:id="@+id/eventid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enddate"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:hint="id"
+        android:visibility="invisible" />
+
+</RelativeLayout>

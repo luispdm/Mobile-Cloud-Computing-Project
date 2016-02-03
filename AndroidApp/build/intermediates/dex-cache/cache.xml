@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\giovanni\.gradle\caches\modules-2\files-2.1\com.google.oauth-client\google-oauth-client\1.20.0\1d086ac5756475ddf451af2e2df6e288d18608ca\google-oauth-client-1.20.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1d086ac5756475ddf451af2e2df6e288d18608ca">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\google-oauth-client-1.20.0-4f9cd6a720de5149f8c871c0c5fc7b73640fe42a.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\1.3.9\40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf\jsr305-1.3.9.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\jsr305-1.3.9-93160deb3b8b6ba8f7943d5f52b51c7f1518959c.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\.gradle\caches\modules-2\files-2.1\com.google.api-client\google-api-client\1.20.0\d3e66209ae9e749b2d6833761e7885f60f285564\google-api-client-1.20.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d3e66209ae9e749b2d6833761e7885f60f285564">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\google-api-client-1.20.0-45249922790c59498a8af0c7bf9b2c3bc1632fc8.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client\1.20.0\93d82db2bca534960253f43424b2ba9d7638b4d2\google-http-client-1.20.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="93d82db2bca534960253f43424b2ba9d7638b4d2">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\google-http-client-1.20.0-9fde8f869130be11379e6c5ba45c98b8b2ec8204.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d11330ea68c0d964d30d5caed1f27e6b1488b189">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\classes-6b62003ea949e41fc8caf2bd09aa1ccd22cbb3e4.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\.gradle\caches\modules-2\files-2.1\com.google.apis\google-api-services-calendar\v3-rev125-1.20.0\fef496f895ad5be86416863153d4efbf7b601f8a\google-api-services-calendar-v3-rev125-1.20.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="fef496f895ad5be86416863153d4efbf7b601f8a">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\google-api-services-calendar-v3-rev125-1.20.0-92b2806f5821efa83aea7fd1c7e1b694e04d2f56.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\classes-b6c1c3ce3f0ea56ac30a59ffd8d3114ec07c5049.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client-jackson2\1.20.0\2408070b2abec043624d35b35e30450f1b663858\google-http-client-jackson2-1.20.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2408070b2abec043624d35b35e30450f1b663858">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\google-http-client-jackson2-1.20.0-df56be377db9039a3e21ceef42d3268fa140dad8.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\classes-3e74fd6c0b76dcb282a082ad638c083ad7fc8a5a.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\.gradle\caches\modules-2\files-2.1\com.google.guava\guava-jdk5\13.0\381ae6c8add7c98e9bcddb1e0b898400cd6fc3f7\guava-jdk5-13.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="381ae6c8add7c98e9bcddb1e0b898400cd6fc3f7">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\guava-jdk5-13.0-0ebda6b32d9f6c1d6e2d75015b88e259a7f3566e.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\.gradle\caches\modules-2\files-2.1\com.google.api-client\google-api-client-android\1.20.0\5673179575c32b69a474334255c3044adf18d40\google-api-client-android-1.20.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="05673179575c32b69a474334255c3044adf18d40">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\google-api-client-android-1.20.0-f2dcfe9541d052e4c64637c0881903501a9998be.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client-android\1.20.0\313dc99a7963523871495897ca11aa8472b3c6fd\google-http-client-android-1.20.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="313dc99a7963523871495897ca11aa8472b3c6fd">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\google-http-client-android-1.20.0-73771bfeed83b2d1449a93c6462ca6335bcd7a80.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.1.3\f6c3aed1cdfa21b5c1737c915186ea93a95a58bd\jackson-core-2.1.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f6c3aed1cdfa21b5c1737c915186ea93a95a58bd">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\jackson-core-2.1.3-5e704ea6862d8629abb7e0ff1e54a649c511beb1.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\classes-fe25b34aaa6051af83b39394eea55c0b79dd6f0c.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c0c912d58c9468b1f9d9769c8975afdf2c85d681">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\classes-2a237ba147efe62a7613ed97f1e196cc1a98c91e.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-b6d611d6b2dd569a3ef238eefa9b4f7dd1f65674.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\classes-cc9ce75f50e3ed121d37dcede1f0eccf37d59478.jar" />
+    </item>
+    <item
+        jar="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="C:\Users\giovanni\Downloads\Calendar-master\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-ceb43aee3426be167eb9c8c8529cc4ba1b76ce40.jar" />
+    </item>
+
+</items>

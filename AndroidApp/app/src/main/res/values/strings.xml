@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Calendar</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="title_activity_user_index">Home</string>
+    <string name="title_activity_register_user">RegisterUser</string>
+    <string name="IP_backend_address">IP address</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="newevent">New Event</string>
+    <string name="calendars">Calendars</string>
+    <string name="menu">Menu</string>
+    <string name="title_activity_new_event">NewEventActivity</string>
+    <string name="create">Create</string>
+    <string name="update">Update</string>
+    <string name="title_activity_edit_event">EditEventActivity</string>
+    <string name="delete_event">Delete</string>
+    <string name="title_activity_calendars">CalendarsActivity</string>
+    <string name="title_activity_new_calendar">NewCalendar</string>
+    <string name="title_activity_update_calendar">UpdateCalendarActivity</string>
+    <string name="alert_dialog_title">Please Select</string>
+    <string name="positive_button_text">Select</string>
+    <string name="negative_button_text">Cancel</string>
+    <string name="title_activity_sync">SyncActivity</string>
+    <string name="android_calendars">Android Calendar</string>
+</resources>
