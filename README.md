@@ -1,4 +1,6 @@
 # Mobile-Cloud-Computing-Project
+**Contributors: Giovanni Armano, Luigi di Girolamo.**
+
 A RESTful web service for a **CALENDAR** developed for the "Mobile Cloud Computing" course at the "Aalto University" in Espoo.
 
 
