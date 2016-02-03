@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link href="./stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./stylesheets/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>Calendar</h1>
+<p>Welcome to your personal calendar</p>
+<form action="http://localhost:3000/list" method="get">
+    <input type="submit" value="Show events">
+</form>
+
+<form action="http://localhost:3000/events" method="post">
+    <table id="insertTable" name="insertTable">
+        <tr>
+            <td class="tdText">
+                Username
+            </td>
+            <td>
+                <input type="text" name="username" placeholder="Pinco pallino">
+            </td>
+        </tr>
+        <tr>
+            <td class="tdText">
+                Event name
+            </td>
+            <td>
+                <input type="text" name="name" placeholder="Untitled event">
+            </td>
+        </tr>
+        <tr>
+            <td class="tdText">
+                Description
+            </td>
+            <td>
+                <input type="text" name="description" placeholder="enter a description">
+            </td>
+        </tr>
+        <tr>
+            <td class="tdText">
+                Calendar
+            </td>
+            <td>
+                <input type="text" name="calendar" placeholder="enter a calendar">
+            </td>
+        </tr>
+        <tr>
+            <td class="tdText">
+                Start date
+            </td>
+            <td>
+                <input type="date" name="dateStartEvent">
+            </td>
+            <td>
+                <input type="time" name="timeStartEvent">
+            </td>
+        </tr>
+        <tr>
+            <td class="tdText">
+                End date
+            </td>
+            <td>
+                <input type="date" name="dateEndEvent">
+            </td>
+            <td>
+                <input type="time" name="timeEndEvent">
+            </td>
+        </tr>
+        <tr>
+            <td class="tdText">
+                Where
+            </td>
+            <td>
+                <input type="text" name="place" placeholder="insert a place">
+            </td>
+        </tr>
+        <tr>
+            <td class="tdText">
+                Activate notification
+            </td>
+            <td>
+                <input type="radio" name="notification">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" name="Add new event" value="Create">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
