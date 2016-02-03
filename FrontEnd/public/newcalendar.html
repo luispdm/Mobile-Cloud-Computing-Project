@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/signin.css" rel="stylesheet">
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+    <link rel='stylesheet' href='./css/jquery-ui.min.css' />
+    <link href='./css/fullcalendar.css' rel='stylesheet' />
+    <link href='./css/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <script src='./js/moment.min.js'></script>
+    <script src='./js/fullcalendar.js'></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="mainTitle">Calendar</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <div class="navbar-form navbar-right" id="buttons">
+                <a class="btn btn-default" href="/index.html">Back</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<form class="form-signin" id="createCalendar">
+    <h2 class="form-signin-heading">New calendar</h2>
+    <label for="name" >Calendar name</label>
+    <input type="text" id="name" class="form-control" placeholder="calendar name" required autofocus>
+    <label for="description">Description</label>
+    <input type="textbox" id="description" class="form-control" placeholder="description">
+    <label for="sharedWith">Shared with (comma separated)</label>
+    <input type="text" id="sharedWith" class="form-control" placeholder="Shared with">
+    <br>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
+</form>
+
+
+<script>
+    var username = $.cookie("username") || "";
+    var token = $.cookie("token") || "";
+
+    if((username.length == 0) || (token.length== 0)){
+        window.location.replace("login.html");
+    }
+
+    var myObject = new Object();
+    myObject.username = username;
+    myObject.password = token;
+    var myString = JSON.stringify(myObject);
+
+    $.ajax({
+        type: 'GET',
+        url: "/users/"+username+"/token/"+token+"/checktoken",
+        success: function(data){
+            $.ajax({
+                type: 'GET',
+                url: "/users/"+username+"/token/"+token+"/calendars",
+                success: function(data){
+                    renderRadioCalendar(data);
+                },
+                error: function(data) {
+                    alert('data: ' + data.responseText);
+                }
+            });
+        },
+        error: function(data) {
+            window.location.replace("login.html");
+        }
+    });
+    $("#mainTitle").append(" of <span style='color:white'>"+myObject.username+"</span>");
+
+    $("#createCalendar").submit(function(event){
+        event.preventDefault();
+
+        var username = $.cookie("username");
+        var token = $.cookie("token");
+
+
+        var myObject = new Object();
+        myObject.name = $("#name").val();
+        myObject.description = $("#description").val();
+        myObject.sharedWith = $("#sharedWith").val();
+
+        var myString = JSON.stringify(myObject);
+
+        $.ajax({
+            type: 'POST',
+            url: "/users/"+username+"/token/"+token+"/calendars",
+            data: myString,
+            contentType: "application/json",
+            success: function(data){
+                window.location.href = "index.html";
+            },
+            error: function(data) {
+            },
+            dataType: 'json'
+        });
+    })
+</script>
+</body>

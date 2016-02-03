@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/signin.css" rel="stylesheet">
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+    <link rel='stylesheet' href='./css/jquery-ui.min.css' />
+    <link href='./css/fullcalendar.css' rel='stylesheet' />
+    <link href='./css/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <script src='./js/moment.min.js'></script>
+    <script src='./js/fullcalendar.js'></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="mainTitle">Calendar</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <div class="navbar-form navbar-right" id="buttons">
+                <a class="btn btn-default" href="/index.html">Back</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<form class="form-signin" id="searchEvent">
+    <h2 class="form-signin-heading">Search event</h2>
+    <label for="name" >Event name</label>
+    <!-- manca username -->
+    <input type="text" id="name" class="form-control" placeholder="event name" required autofocus>
+    <label for="place">Place</label>
+    <input type="text" id="place" class="form-control" placeholder="place">
+    <label for="description">Description</label>
+    <input type="textbox" id="description" class="form-control" placeholder="description">
+    <label for="start">Start</label>
+    <input type="datetime-local" id="start" class="form-control" placeholder="start">
+    <label for="end">End</label>
+    <input type="datetime-local" id="end" class="form-control" placeholder="end">
+    <label>Calendar</label>
+    <select id="calendarSelect" class="btn btn-lg btn-default btn-block">
+        <option value="" disabled>Select one</option>
+    </select>
+    <!--<label for="color">Location</label>
+     <input type="color" id="color" class="form-control" placeholder="color">-->
+    <label for="sharedWith">Shared with (comma separated)</label>
+    <input type="text" id="sharedWith" class="form-control" placeholder="Shared with">
+    <br>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Search</button>
+</form>
+
+<div id='calendar'></div>
+
+<script>
+    var username = $.cookie("username") || "";
+    var token = $.cookie("token") || "";
+
+    if((username.length == 0) || (token.length== 0)){
+        window.location.replace("login.html");
+    }
+
+    var myObject = new Object();
+    myObject.username = username;
+    myObject.password = token;
+    var myString = JSON.stringify(myObject);
+
+    $.ajax({
+        type: 'GET',
+        url: "/users/"+username+"/token/"+token+"/checktoken",
+        success: function(data){
+        },
+        error: function(data) {
+            window.location.replace("login.html");
+        }
+    });
+    $("#mainTitle").append(" of <span style='color:white'>"+myObject.username+"</span>");
+
+    $.ajax({
+        type: 'GET',
+        url: "/users/"+username+"/token/"+token+"/calendars",
+        success: function(data){
+            renderRadioCalendar(data);
+        },
+        error: function(data) {
+            alert('data: ' + data.responseText);
+        }
+    });
+
+    $("#searchEvent").submit(function(event){
+        event.preventDefault();
+
+        var username = $.cookie("username");
+        var token = $.cookie("token");
+
+        var start = new Date($("#start").val());
+        var millisecondsstart = start.getTime();
+        var end = new Date($("#end").val());
+        var millisecondsend = end.getTime();
+
+        var myObject = new Object();
+        if($("#name").val()!=""){
+            myObject.name = $("#name").val();
+        }
+        if($("#place").val() !=""){
+            myObject.place = $("#place").val();
+        }
+        if($("#description").val() !=""){
+            myObject.description = $("#description").val();
+        }
+        if( $("#calendarSelect").val()){
+            myObject.calendar = $("#calendarSelect").val();
+        }
+        if( $("#sharedWith").val()!=""){
+            myObject.sharedWith = $("#sharedWith").val();
+        }
+        if(!isNaN(millisecondsstart)){
+            myObject.dateStartEvent = millisecondsstart;
+
+        }
+        if(!isNaN(millisecondsend)){
+            myObject.dateEndEvent = millisecondsend;
+        }
+        var myString = JSON.stringify(myObject);
+
+        $.ajax({
+            type: 'POST',
+            url: "/users/"+username+"/token/"+token+"/search",
+            data: myString,
+            contentType: "application/json",
+            success: function(data){
+                renderHomePage(data)
+            },
+            error: function(data) {
+            },
+            dataType: 'json'
+        });
+    })
+
+    function renderRadioCalendar(data){
+        var i;
+        for(i=0;i<data.length;i++){
+            $('#calendarSelect').append('<option value="'+data[i]._id+'">'+data[i].name+'</option>');
+        }
+    }
+
+    function renderCalendar(eventsList) {
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
+            defaultDate: Date.now(),
+            buttonIcons: false, // show the prev/next text
+            weekNumbers: true,
+            editable: true,
+            eventLimit: true, // allow "more" link when too many events
+            events: eventsList
+        });
+    }
+
+    function renderHomePage(data){
+        renderCalendar(data);
+    }
+
+</script>
+</body>

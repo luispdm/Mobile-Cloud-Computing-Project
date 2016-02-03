@@ -1,0 +1,63 @@
+{"level":"error","message":"Status: 500 info: {\"err\":\"User not found\"}","timestamp":"2015-11-02T23:03:36.662Z"}
+{"level":"error","message":"Status: 500 info: {\"err\":\"User not found\"}","timestamp":"2015-11-02T23:03:36.671Z"}
+{"level":"error","message":"Status: 500 info: {\"err\":\"User not found\"}","timestamp":"2015-11-02T23:03:36.672Z"}
+{"level":"error","message":"Status: 500 info: {\"error\":\"incorrect user or password\"}","timestamp":"2015-11-02T23:03:42.308Z"}
+{"level":"error","message":"Status: 500 info: {\"error\":\"incorrect user or password\"}","timestamp":"2015-11-02T23:03:46.648Z"}
+{"level":"error","message":"Status: 500 info: {\"error\":\"incorrect user or password\"}","timestamp":"2015-11-02T23:03:50.502Z"}
+{"level":"error","message":"Status: 500 info: {\"error\":\"incorrect user or password\"}","timestamp":"2015-11-02T23:03:55.246Z"}
+{"level":"error","message":"Status: 500 info: {\"error\":\"incorrect user or password\"}","timestamp":"2015-11-02T23:03:58.487Z"}
+{"level":"error","message":"Status: 500 info: {\"error\":\"incorrect user or password\"}","timestamp":"2015-11-02T23:04:00.985Z"}
+{"level":"error","message":"Status: 500 info: {\"error\":\"incorrect user or password\"}","timestamp":"2015-11-02T23:04:06.466Z"}
+{"level":"error","message":"Status: 500 info: {\"error\":\"incorrect user or password\"}","timestamp":"2015-11-02T23:04:12.593Z"}
+{"level":"info","message":"Message: New user created info: {}","timestamp":"2015-11-02T23:04:26.800Z"}
+{"level":"info","message":"Message: New calendar created info: {}","timestamp":"2015-11-02T23:04:26.801Z"}
+{"level":"info","message":"Status: 200 info: {\"username\":\"luigi\",\"token\":\"4109686c8623a04bf61dc0c755fbbe7e9ed0d826f3c261edf5579c8e91ae8b9e\",\"lastAction\":\"2015-11-02T23:04:26.449Z\"}","timestamp":"2015-11-02T23:04:26.802Z"}
+{"level":"info","message":"Status: 200 info: {}","timestamp":"2015-11-02T23:04:27.068Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:04:27.079Z"}
+{"level":"info","message":"Status: 200 info: [{\"_id\":\"5637ebfad3d01f5f0592dedf\",\"name\":\"Default\",\"description\":\"\",\"owner\":\"luigi\",\"__v\":0,\"sharedWith\":[]}]","timestamp":"2015-11-02T23:04:27.083Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:04:27.141Z"}
+{"level":"info","message":"Status: 200 info: {}","timestamp":"2015-11-02T23:04:37.172Z"}
+{"level":"info","message":"Status: 200 info: [{\"_id\":\"5637ebfad3d01f5f0592dedf\",\"name\":\"Default\",\"description\":\"\",\"owner\":\"luigi\",\"__v\":0,\"sharedWith\":[]}]","timestamp":"2015-11-02T23:04:37.216Z"}
+{"level":"info","message":"Status: 200 info: {}","timestamp":"2015-11-02T23:04:38.395Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:04:38.407Z"}
+{"level":"info","message":"Status: 200 info: [{\"_id\":\"5637ebfad3d01f5f0592dedf\",\"name\":\"Default\",\"description\":\"\",\"owner\":\"luigi\",\"__v\":0,\"sharedWith\":[]}]","timestamp":"2015-11-02T23:04:38.410Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:04:38.467Z"}
+{"level":"info","message":"Status: 200 info: {}","timestamp":"2015-11-02T23:04:48.607Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:04:48.633Z"}
+{"level":"info","message":"Status: 200 info: [{\"_id\":\"5637ebfad3d01f5f0592dedf\",\"name\":\"Default\",\"description\":\"\",\"owner\":\"luigi\",\"__v\":0,\"sharedWith\":[]}]","timestamp":"2015-11-02T23:04:48.637Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:04:48.669Z"}
+{"level":"info","message":"Status: 200 info: {}","timestamp":"2015-11-02T23:04:50.291Z"}
+{"level":"info","message":"Status: 200 info: [{\"_id\":\"5637ebfad3d01f5f0592dedf\",\"name\":\"Default\",\"description\":\"\",\"owner\":\"luigi\",\"__v\":0,\"sharedWith\":[]}]","timestamp":"2015-11-02T23:04:50.371Z"}
+{"level":"info","message":"Status: 200 info: {}","timestamp":"2015-11-02T23:04:52.160Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:04:52.168Z"}
+{"level":"info","message":"Status: 200 info: [{\"_id\":\"5637ebfad3d01f5f0592dedf\",\"name\":\"Default\",\"description\":\"\",\"owner\":\"luigi\",\"__v\":0,\"sharedWith\":[]}]","timestamp":"2015-11-02T23:04:52.171Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:04:52.236Z"}
+{"level":"info","message":"Status: 200 info: {}","timestamp":"2015-11-02T23:04:54.621Z"}
+{"level":"info","message":"Status: 200 info: [{\"_id\":\"5637ebfad3d01f5f0592dedf\",\"name\":\"Default\",\"description\":\"\",\"owner\":\"luigi\",\"__v\":0,\"sharedWith\":[]}]","timestamp":"2015-11-02T23:04:54.707Z"}
+{"level":"info","message":"Status: 200 info: {}","timestamp":"2015-11-02T23:04:55.532Z"}
+{"level":"info","message":"Status: 200 info: [{\"_id\":\"5637ebfad3d01f5f0592dedf\",\"name\":\"Default\",\"description\":\"\",\"owner\":\"luigi\",\"__v\":0,\"sharedWith\":[]}]","timestamp":"2015-11-02T23:04:55.542Z"}
+{"level":"info","message":"Status: 200 info: [{\"_id\":\"5637ebfad3d01f5f0592dedf\",\"name\":\"Default\",\"description\":\"\",\"owner\":\"luigi\",\"__v\":0,\"sharedWith\":[]}]","timestamp":"2015-11-02T23:04:56.740Z"}
+{"level":"info","message":"Status: 200 info: {}","timestamp":"2015-11-02T23:04:57.653Z"}
+{"level":"info","message":"Status: 200 info: [{\"_id\":\"5637ebfad3d01f5f0592dedf\",\"name\":\"Default\",\"description\":\"\",\"owner\":\"luigi\",\"__v\":0,\"sharedWith\":[]}]","timestamp":"2015-11-02T23:04:57.662Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:04:57.664Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:04:57.718Z"}
+{"level":"info","message":"Status: 200 info: {}","timestamp":"2015-11-02T23:06:10.825Z"}
+{"level":"info","message":"Status: 200 info: [{\"_id\":\"5637ebfad3d01f5f0592dedf\",\"name\":\"Default\",\"description\":\"\",\"owner\":\"luigi\",\"__v\":0,\"sharedWith\":[]}]","timestamp":"2015-11-02T23:06:10.893Z"}
+{"level":"info","message":"Status: 200 info: {}","timestamp":"2015-11-02T23:06:13.774Z"}
+{"level":"info","message":"Status: 200 info: [{\"_id\":\"5637ebfad3d01f5f0592dedf\",\"name\":\"Default\",\"description\":\"\",\"owner\":\"luigi\",\"__v\":0,\"sharedWith\":[]}]","timestamp":"2015-11-02T23:06:13.790Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:06:13.792Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:06:13.842Z"}
+{"level":"info","message":"Status: 200 info: {}","timestamp":"2015-11-02T23:07:36.532Z"}
+{"level":"info","message":"Status: 200 info: [{\"_id\":\"5637ebfad3d01f5f0592dedf\",\"name\":\"Default\",\"description\":\"\",\"owner\":\"luigi\",\"__v\":0,\"sharedWith\":[]}]","timestamp":"2015-11-02T23:07:36.646Z"}
+{"level":"info","message":"Status: 200 info: {}","timestamp":"2015-11-02T23:07:38.586Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:07:38.599Z"}
+{"level":"info","message":"Status: 200 info: [{\"_id\":\"5637ebfad3d01f5f0592dedf\",\"name\":\"Default\",\"description\":\"\",\"owner\":\"luigi\",\"__v\":0,\"sharedWith\":[]}]","timestamp":"2015-11-02T23:07:38.603Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:07:38.656Z"}
+{"level":"info","message":"Status: 200 info: {}","timestamp":"2015-11-02T23:09:55.402Z"}
+{"level":"info","message":"Status: 200 info: [{\"_id\":\"5637ebfad3d01f5f0592dedf\",\"name\":\"Default\",\"description\":\"\",\"owner\":\"luigi\",\"__v\":0,\"sharedWith\":[]}]","timestamp":"2015-11-02T23:09:55.426Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:09:55.429Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:09:55.487Z"}
+{"level":"info","message":"Status: 200 info: {}","timestamp":"2015-11-02T23:10:18.617Z"}
+{"level":"info","message":"Status: 200 info: [{\"_id\":\"5637ebfad3d01f5f0592dedf\",\"name\":\"Default\",\"description\":\"\",\"owner\":\"luigi\",\"__v\":0,\"sharedWith\":[]}]","timestamp":"2015-11-02T23:10:18.649Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:10:18.655Z"}
+{"level":"info","message":"Status: 200 info: []","timestamp":"2015-11-02T23:10:18.733Z"}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/signin.css" rel="stylesheet">
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+    <link rel='stylesheet' href='./css/jquery-ui.min.css' />
+    <link href='./css/fullcalendar.css' rel='stylesheet' />
+    <link href='./css/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <script src='./js/moment.min.js'></script>
+    <script src='./js/fullcalendar.js'></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="mainTitle">Calendar</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right" id="navbar-login">
+                <div class="form-group">
+                    <input type="text" placeholder="Username" name="usernameNavbar" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" name="passwordNavbar" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success">Sign in</button>
+            </form>
+        </div><!--/.navbar-collapse -->
+    </div>
+</nav>
+<div class="jumbotron" id="mainContent">
+    <div class="container" id="welcomeMessage">
+        <h1>Welcome!</h1>
+        <p>This is the perfect web application to create, manage and share events with your friends or co-worker.</p>
+        <p><a class="btn btn-primary btn-lg" role="button" id="registration" >Register for free &raquo;</a></p>
+    </div>
+
+    <div class="container" id="registrationContainer" hidden>
+
+        <form class="form-signin" id="form-signin">
+            <h2 class="form-signin-heading">Register now</h2>
+            <input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
+            <input type="password" name="password" class="form-control" placeholder="Password" required>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+        </form>
+
+    </div>
+</div>
+<div class="container" id="container"></div>
+<div id='calendar'></div>
+</div>
+<script>
+    $(document).ready(function(){
+
+        $("#registration").click(function(){
+            $("#welcomeMessage").hide();
+            $("#registrationContainer").fadeIn();
+        });
+
+        $("#form-signin").submit(function(event){
+            event.preventDefault();
+            $('#alertMessage').remove();
+
+            var myObject = new Object();
+            myObject.username = $( 'input[name="username"]').val();
+            myObject.password = $( 'input[name="password"]').val();
+            var myString = JSON.stringify(myObject);
+
+            $.ajax({
+                type: 'POST',
+                url: "/registration",
+                data: myString,
+                contentType: "application/json",
+                success: function(data){
+                    $.cookie("token", data.token);
+                    $.cookie("username", data.username);
+                    window.location.href = "index.html";
+                },
+                error: function(data) {
+                    $("#form-signin").append("<p style='color:red' id='alertMessage'>"+data.responseJSON.error+"</p>");
+                },
+                dataType: 'json'
+            });
+        })
+
+        $("#navbar-login").submit(function(event){
+            event.preventDefault();
+
+            var myObject = new Object();
+            myObject.username = $( 'input[name="usernameNavbar"]').val();
+            myObject.password = $( 'input[name="passwordNavbar"]').val();
+            var myString = JSON.stringify(myObject);
+
+            $.ajax({
+                type: 'POST',
+                url: "/logincheck",
+                data: myString,
+                contentType: "application/json",
+                success: function(data){
+                    $.cookie("token", data.token);
+                    $.cookie("username", data.username);
+                    window.location.href = "index.html";
+                },
+                error: function(data) {
+                    //$("#form-signin").append("<p style='color:red'>"+data.responseJSON.error+"</p>");
+                    alert('Incorrect username or password');
+                },
+                dataType: 'json'
+            });
+        })
+    });
+
+    function renderCalendar(eventsList) {
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
+            defaultDate: Date.now(),
+            buttonIcons: false, // show the prev/next text
+            weekNumbers: true,
+            editable: true,
+            eventLimit: true, // allow "more" link when too many events
+            events: eventsList
+        });
+    }
+</script>
+</body>
+</html>

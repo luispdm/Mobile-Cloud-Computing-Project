@@ -1,0 +1,24 @@
+body {
+  padding: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: rgba(209, 209, 201, 0.6)  ;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#insertTable{
+  padding: 5px;
+}
+form{
+    padding:20px;
+
+}
+td{
+    padding: 2px;
+}
+
+.tdText{
+    text-align: right;
+}
