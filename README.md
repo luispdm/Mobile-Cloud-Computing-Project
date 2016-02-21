@@ -1,7 +1,7 @@
 # Mobile-Cloud-Computing-Project
 **Contributors: Giovanni Armano, Luigi di Girolamo.**
 
-A RESTful web service for a **CALENDAR** developed for the "Mobile Cloud Computing" course at the "Aalto University" in Espoo.
+A RESTful web service for a **CALENDAR** developed for the "Mobile Cloud Computing" course at the "Aalto University" in the year 2015/2016.
 
 
 Since we are talking about a calendar, you can register a new user, create/edit calendars and events, share an event. Since it's RESTful, GET POST PUT and DELETE are all implemented.
